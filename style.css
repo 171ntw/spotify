@@ -1,0 +1,169 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e1e1e1;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#app {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#sidebar {
+    width: 240px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+#sidebar h1 {
+    color: #1db954;
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    flex-grow: 1;
+}
+
+#sidebar ul li {
+    margin: 15px 0;
+}
+
+#sidebar ul li a {
+    text-decoration: none;
+    color: #e1e1e1;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+#sidebar ul li a i {
+    margin-right: 10px;
+}
+
+#main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#header {
+    margin-bottom: 20px;
+}
+
+#search-bar {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #1e1e1e;
+    color: #e1e1e1;
+}
+
+#content {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+#search-results {
+    margin-top: 20px;
+}
+
+.result-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #282828;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.result-item:hover {
+    background-color: #333;
+}
+
+#player {
+    background-color: #282828;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+#now-playing {
+    display: flex;
+    align-items: center;
+    flex: 2;
+}
+
+#song-info {
+    margin-left: 20px;
+}
+
+#player-controls {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+#player-controls button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+#volume-control {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+#volume-control i {
+    margin-right: 10px;
+}
+
+#volume {
+    margin-left: 10px;
+}
+
+#time-info {
+    display: flex;
+    align-items: center;
+    color: #e1e1e1;
+    font-size: 14px;
+    flex: 1;
+    justify-content: center;
+}
